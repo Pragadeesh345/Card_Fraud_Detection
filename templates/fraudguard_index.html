@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FraudGuard Pro - Advanced Security Analytics</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fraudguard_style.css') }}">
+</head>
+<body>
+    <!-- Professional Background with Credit Card Animations -->
+    <div class="professional-background">
+        <div class="background-layer layer-1"></div>
+        <div class="background-layer layer-2"></div>
+        <div class="background-layer layer-3"></div>
+        
+        <!-- Floating Credit Cards -->
+        <div class="credit-card-container">
+            <div class="floating-card card-1">
+                <div class="card-front">
+                    <div class="card-chip"></div>
+                    <div class="card-number">**** **** **** 1234</div>
+                    <div class="card-holder">JOHN DOE</div>
+                    <div class="card-expiry">12/25</div>
+                    <div class="card-logo">VISA</div>
+                </div>
+            </div>
+            <div class="floating-card card-2">
+                <div class="card-front">
+                    <div class="card-chip"></div>
+                    <div class="card-number">**** **** **** 5678</div>
+                    <div class="card-holder">JANE SMITH</div>
+                    <div class="card-expiry">08/26</div>
+                    <div class="card-logo">MASTERCARD</div>
+                </div>
+            </div>
+            <div class="floating-card card-3">
+                <div class="card-front">
+                    <div class="card-chip"></div>
+                    <div class="card-number">**** **** **** 9012</div>
+                    <div class="card-holder">MIKE JOHNSON</div>
+                    <div class="card-expiry">03/27</div>
+                    <div class="card-logo">AMEX</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Money Flow Animation -->
+        <div class="money-flow">
+            <div class="money-bill bill-1">₹1000</div>
+            <div class="money-bill bill-2">₹500</div>
+            <div class="money-bill bill-3">₹2000</div>
+            <div class="money-bill bill-4">₹5000</div>
+            <div class="money-bill bill-5">₹10000</div>
+            <div class="money-bill bill-6">₹500</div>
+            <div class="money-bill bill-7">₹1000</div>
+            <div class="money-bill bill-8">₹2000</div>
+        </div>
+        
+        <!-- Security Icons -->
+        <div class="security-icons">
+            <div class="security-icon icon-1">🔒</div>
+            <div class="security-icon icon-2">🛡️</div>
+            <div class="security-icon icon-3">🔐</div>
+            <div class="security-icon icon-4">🔑</div>
+            <div class="security-icon icon-5">⚡</div>
+            <div class="security-icon icon-6">🎯</div>
+        </div>
+        
+        <!-- Data Flow Lines -->
+        <div class="data-flow">
+            <div class="flow-line line-1"></div>
+            <div class="flow-line line-2"></div>
+            <div class="flow-line line-3"></div>
+            <div class="flow-line line-4"></div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Header -->
+        <header class="professional-header">
+            <div class="header-content">
+                <div class="logo-section">
+                    <div class="logo-icon">🛡️</div>
+                    <div class="logo-text">
+                        <h1 class="main-title">FraudGuard Pro</h1>
+                        <p class="subtitle">Advanced Security Analytics</p>
+                    </div>
+                </div>
+                <div class="header-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">99.7%</span>
+                        <span class="stat-label">Accuracy</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">&lt;200ms</span>
+                        <span class="stat-label">Response</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Monitoring</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- ML Model Selection -->
+            <div class="model-selection">
+                <div class="model-header">
+                    <h2>🧠 Select ML Algorithm</h2>
+                    <p>Choose the machine learning model for fraud detection analysis</p>
+                </div>
+                <div class="model-options">
+                    <label class="model-option">
+                        <input type="radio" name="ml_model" value="SVM" checked>
+                        <div class="model-card">
+                            <i class="fas fa-chart-line"></i>
+                            <h3>SVM</h3>
+                            <p>Support Vector Machine</p>
+                        </div>
+                    </label>
+                    <label class="model-option">
+                        <input type="radio" name="ml_model" value="Random Forest">
+                        <div class="model-card">
+                            <i class="fas fa-tree"></i>
+                            <h3>Random Forest</h3>
+                            <p>Ensemble Learning</p>
+                        </div>
+                    </label>
+                    <label class="model-option">
+                        <input type="radio" name="ml_model" value="Logistic Regression">
+                        <div class="model-card">
+                            <i class="fas fa-chart-bar"></i>
+                            <h3>Logistic Regression</h3>
+                            <p>Linear Classification</p>
+                        </div>
+                    </label>
+                    <label class="model-option">
+                        <input type="radio" name="ml_model" value="Neural Network">
+                        <div class="model-card">
+                            <i class="fas fa-network-wired"></i>
+                            <h3>Neural Network</h3>
+                            <p>Deep Learning</p>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="form-container">
+                <div class="form-header">
+                    <h2>🔍 Transaction Security Analysis</h2>
+                    <p>Enter transaction details for comprehensive fraud detection analysis</p>
+                </div>
+
+                <form id="fraudForm" class="professional-form">
+                    <!-- Amount and Time Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="amount">💰 Transaction Amount (₹)</label>
+                            <input type="number" id="amount" name="amount" min="0" step="0.01" placeholder="e.g., 25,000" required>
+                            <div class="input-indicator"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="time">🕐 Time of Day</label>
+                            <input type="number" id="time" name="time" min="0" max="23.99" step="0.01" placeholder="e.g., 14.30" required>
+                            <div class="input-indicator"></div>
+                        </div>
+                    </div>
+
+                    <!-- Merchant and Distance Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="merchant_category">🏪 Merchant Category</label>
+                            <select id="merchant_category" name="merchant_category" required onchange="handleMerchantCategoryChange()">
+                                <option value="">Select Category</option>
+                                <option value="1">🛒 Grocery Store</option>
+                                <option value="2">⛽ Fuel Station</option>
+                                <option value="3">🍽️ Restaurant</option>
+                                <option value="4">🛍️ Retail Store</option>
+                                <option value="5">💻 Online Shopping</option>
+                                <option value="6">🎬 Entertainment</option>
+                                <option value="7">✈️ Travel</option>
+                                <option value="8">🏥 Healthcare</option>
+                                <option value="9">🎓 Education</option>
+                                <option value="10">🏠 Real Estate</option>
+                            </select>
+                            <div class="input-indicator"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="distance_from_home">📍 Distance from Home (km)</label>
+                            <input type="number" id="distance_from_home" name="distance_from_home" min="0" step="0.1" placeholder="e.g., 15.5" required>
+                            <div class="input-indicator"></div>
+                        </div>
+                    </div>
+
+                    <!-- Card Type and Account Balance Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="card_type">💳 Card Type</label>
+                            <select id="card_type" name="card_type" required onchange="handleCardTypeChange()">
+                                <option value="">Select Card Type</option>
+                                <option value="2">Credit Card</option>
+                                <option value="1">Debit Card</option>
+                                <option value="3">Premium Card</option>
+                                <option value="4">Business Card</option>
+                            </select>
+                            <div class="input-indicator"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="balance">💳 Account Balance (₹)</label>
+                            <input type="number" id="balance" name="balance" min="0" step="0.01" placeholder="e.g., 1,50,000" required>
+                            <div class="input-indicator"></div>
+                        </div>
+                    </div>
+
+                    <!-- Credit Limit and Account Age Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="credit_limit">🎯 Credit Limit (₹)</label>
+                            <input type="number" id="credit_limit" name="credit_limit" min="0" step="0.01" placeholder="e.g., 3,00,000" required>
+                            <div class="input-indicator"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="account_age_days">📅 Account Age (days)</label>
+                            <input type="number" id="account_age_days" name="account_age_days" min="0" placeholder="e.g., 365" required>
+                            <div class="input-indicator"></div>
+                        </div>
+                    </div>
+
+                    <!-- Daily Transactions and Previous Fraud Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="transaction_frequency">🔄 Daily Transactions</label>
+                            <input type="number" id="transaction_frequency" name="transaction_frequency" min="0" placeholder="e.g., 3" required>
+                            <div class="input-indicator"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="previous_fraud">🛡️ Previous Fraud History</label>
+                            <select id="previous_fraud" name="previous_fraud" required>
+                                <option value="0">No previous fraud</option>
+                                <option value="1">Previous fraud detected</option>
+                            </select>
+                            <div class="input-indicator"></div>
+                        </div>
+                    </div>
+
+                    <!-- Transaction Date and Monthly Income Row -->
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="transaction_date">📅 Transaction Date</label>
+                            <input type="date" id="transaction_date" name="transaction_date" required>
+                            <div class="input-indicator"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="monthly_income">💰 Monthly Income (₹)</label>
+                            <input type="number" id="monthly_income" name="monthly_income" min="0" step="0.01" placeholder="e.g., 75,000" required>
+                            <div class="input-indicator"></div>
+                        </div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="submit-container">
+                        <button type="submit" class="professional-submit-btn">
+                            <span class="btn-text">🔍 Analyze Transaction</span>
+                            <span class="btn-loading" style="display: none;">
+                                <div class="security-spinner"></div>
+                                <span>Analyzing with advanced algorithms...</span>
+                            </span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Results Container -->
+            <div id="resultsContainer" class="results-container" style="display: none;">
+                <div class="results-header">
+                    <h3>📊 Security Analysis Results</h3>
+                    <div class="security-message" id="securityMessage"></div>
+                </div>
+                
+                <div class="results-content">
+                    <div class="risk-assessment">
+                        <div class="risk-level" id="riskLevel">
+                            <span class="risk-icon"></span>
+                            <span class="risk-text"></span>
+                        </div>
+                        <div class="fraud-probability">
+                            <span class="probability-label">Fraud Probability:</span>
+                            <span class="probability-value" id="fraudProbability"></span>
+                        </div>
+                    </div>
+
+                    <!-- ML Model Information -->
+                    <div class="ml-model-info">
+                        <h4>🤖 ML Model Information</h4>
+                        <div class="model-details">
+                            <div class="model-detail-item">
+                                <span class="model-label">Algorithm Used:</span>
+                                <span class="model-value" id="mlModelUsed">SVM</span>
+                            </div>
+                            <div class="model-detail-item">
+                                <span class="model-label">Confidence Level:</span>
+                                <span class="model-value" id="modelConfidence">High</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="transaction-summary">
+                        <h4>📋 Transaction Summary</h4>
+                        <div class="summary-grid">
+                            <div class="summary-item">
+                                <span class="summary-label">Amount:</span>
+                                <span class="summary-value" id="summaryAmount"></span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Merchant:</span>
+                                <span class="summary-value" id="summaryMerchant"></span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Time:</span>
+                                <span class="summary-value" id="summaryTime"></span>
+                            </div>
+                            <div class="summary-item">
+                                <span class="summary-label">Distance:</span>
+                                <span class="summary-value" id="summaryDistance"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommendations">
+                        <h4>🛡️ Security Recommendations</h4>
+                        <ul id="recommendationsList" class="recommendations-list"></ul>
+                    </div>
+                </div>
+
+                <div class="results-actions">
+                    <button class="professional-action-btn" onclick="clearForm()">🔍 New Analysis</button>
+                    <button class="professional-action-btn secondary" onclick="compareModels()">📊 Compare Models</button>
+                    <button class="professional-action-btn secondary" onclick="scrollToTop()">⬆️ Return to Top</button>
+                </div>
+            </div>
+
+            <!-- Model Comparison Section -->
+            <div id="modelComparison" class="model-comparison" style="display: none;">
+                <div class="comparison-content">
+                    <button class="close-btn" onclick="closeModelComparison()">&times;</button>
+                    <div class="comparison-header">
+                        <h3>📊 ML Model Performance Comparison</h3>
+                        <p>Compare the performance of different machine learning algorithms</p>
+                    </div>
+                    <div id="comparisonResults" class="comparison-results">
+                        <!-- Comparison results will be populated by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="professional-footer">
+            <div class="footer-content">
+                <p>🛡️ FraudGuard Pro - Advanced Security Analytics & Fraud Detection</p>
+                <p>© 2025 - Professional Security Solutions</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Floating Action Button -->
+    <div class="floating-action-btn" onclick="scrollToTop()">
+        <span>🛡️</span>
+    </div>
+
+    <script src="{{ url_for('static', filename='fraudguard_script.js') }}"></script>
+</body>
+</html>
+
